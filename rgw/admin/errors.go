@@ -89,15 +89,16 @@ const (
 )
 
 var (
-	errMissingUserID          = errors.New("missing user ID")
-	errMissingSubuserID       = errors.New("missing subuser ID")
-	errMissingUserAccessKey   = errors.New("missing user access key")
-	errMissingUserDisplayName = errors.New("missing user display name")
-	errMissingUserCap         = errors.New("missing user capabilities")
-	errMissingBucketID        = errors.New("missing bucket ID")
-	errMissingBucket          = errors.New("missing bucket")
-	errMissingUserBucket      = errors.New("missing bucket")
-	errUnsupportedKeyType     = errors.New("unsupported key type")
+	errMissingUserID                 = errors.New("missing user ID")
+	errMissingSubuserID              = errors.New("missing subuser ID")
+	errMissingUserAccessKey          = errors.New("missing user access key")
+	errMissingUserDisplayName        = errors.New("missing user display name")
+	errMissingUserCap                = errors.New("missing user capabilities")
+	errMissingBucketID               = errors.New("missing bucket ID")
+	errMissingBucket                 = errors.New("missing bucket")
+	errMissingUserBucket             = errors.New("missing bucket")
+	errUnsupportedKeyType            = errors.New("unsupported key type")
+	errGlobalRateLimitFlagMustBeTrue = errors.New("global must be true to get global rate limits")
 )
 
 // errorReason is the reason of the error
